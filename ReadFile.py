@@ -85,7 +85,7 @@ for item in sorted_list:
 
 # writing a sorted list(string) of exponents of matrix elements to new file
 #f_s_exp--->f-file,s-sorted,exp-exponents
-with open('31GF3_0xb_3x3_matris_sorted_e_list.txt', 'w') as f_s_exp:
+with open('31GF3_0xb_3x3_matris_e_list_sorted.txt', 'w') as f_s_exp:
     for item in new_sorted_list:
         f_s_exp.write(item)
         f_s_exp.write('\n')
