@@ -94,3 +94,18 @@ with open('31GF3_0xb_3x3_matris_sorted_e_list.txt', 'w') as f_s_exp:
 #sorted string of exponents of a matrix ==> new_sorted_list
 
 #fetching representative matrices.
+new_sorted_list.sort()
+rep_matrix = []
+matrix = ''
+for item in new_sorted_list:
+    if item == matrix:
+        continue
+    if item != matrix:
+        matrix = item
+        rep_matrix.append(matrix)
+#print(rep_matrix)
+#writing representative matrix to a file(f_r_matrix --->f-file,r-representative)
+with open('31GF3_0xb_3x3_matris_rep_matrix.txt', 'w') as f_r_matrix:
+    for item in rep_matrix:
+        f_r_matrix.write(item)
+        f_r_matrix.write('\n')
