@@ -1,0 +1,1080 @@
+4
+matris:
+[  x x^5   x]
+[x^3 x^2 x^6]
+[x^3 x^3 x^4]
+Katsayilar(b0,b1):
+[ 1, x^3 ]
+Elemanlar(a11,a22):
+[ x, x^2 ]
+------------------------------
+5
+matris:
+[  x x^5 x^2]
+[x^3 x^2   1]
+[x^2 x^2 x^4]
+Katsayilar(b0,b1):
+[ 1, x^4 ]
+Elemanlar(a11,a22):
+[ x, x^2 ]
+------------------------------
+11
+matris:
+[  x x^6   x]
+[x^2 x^2 x^5]
+[x^3 x^4 x^4]
+Katsayilar(b0,b1):
+[ x, x^3 ]
+Elemanlar(a11,a22):
+[ x, x^2 ]
+------------------------------
+34
+matris:
+[  x x^2 x^3]
+[x^6 x^2 x^4]
+[  x x^5 x^4]
+Katsayilar(b0,b1):
+[ x^4, x^5 ]
+Elemanlar(a11,a22):
+[ x, x^2 ]
+------------------------------
+40
+matris:
+[  x x^3 x^2]
+[x^5 x^2 x^2]
+[x^2   1 x^4]
+Katsayilar(b0,b1):
+[ x^5, x^4 ]
+Elemanlar(a11,a22):
+[ x, x^2 ]
+------------------------------
+41
+matris:
+[  x x^3 x^3]
+[x^5 x^2 x^3]
+[  x x^6 x^4]
+Katsayilar(b0,b1):
+[ x^5, x^5 ]
+Elemanlar(a11,a22):
+[ x, x^2 ]
+------------------------------
+43
+matris:
+[  x x^4 x^5]
+[x^4 x^2 x^4]
+[x^6 x^5 x^4]
+Katsayilar(b0,b1):
+[ x^6, 1 ]
+Elemanlar(a11,a22):
+[ x, x^2 ]
+------------------------------
+44
+matris:
+[  x x^4 x^6]
+[x^4 x^2 x^5]
+[x^5 x^4 x^4]
+Katsayilar(b0,b1):
+[ x^6, x ]
+Elemanlar(a11,a22):
+[ x, x^2 ]
+------------------------------
+61
+matris:
+[  x x^6 x^2]
+[  x x^3 x^5]
+[  1   x x^6]
+Katsayilar(b0,b1):
+[ x, x^4 ]
+Elemanlar(a11,a22):
+[ x, x^3 ]
+------------------------------
+73
+matris:
+[  x   x   1]
+[x^6 x^3   x]
+[x^2 x^5 x^6]
+Katsayilar(b0,b1):
+[ x^3, x^2 ]
+Elemanlar(a11,a22):
+[ x, x^3 ]
+------------------------------
+90
+matris:
+[  x x^3 x^3]
+[x^4 x^3 x^2]
+[x^6 x^4 x^6]
+Katsayilar(b0,b1):
+[ x^5, x^5 ]
+Elemanlar(a11,a22):
+[ x, x^3 ]
+------------------------------
+93
+matris:
+[  x x^4 x^6]
+[x^3 x^3 x^4]
+[x^3 x^2 x^6]
+Katsayilar(b0,b1):
+[ x^6, x ]
+Elemanlar(a11,a22):
+[ x, x^3 ]
+------------------------------
+105
+matris:
+[  x x^5 x^4]
+[x^6 x^4 x^5]
+[x^4 x^4 x^2]
+Katsayilar(b0,b1):
+[ 1, x^6 ]
+Elemanlar(a11,a22):
+[ x, x^4 ]
+------------------------------
+112
+matris:
+[  x x^6 x^4]
+[x^5 x^4 x^4]
+[x^4 x^5 x^2]
+Katsayilar(b0,b1):
+[ x, x^6 ]
+Elemanlar(a11,a22):
+[ x, x^4 ]
+------------------------------
+120
+matris:
+[  x   x x^5]
+[x^3 x^4 x^3]
+[x^3 x^6 x^2]
+Katsayilar(b0,b1):
+[ x^3, 1 ]
+Elemanlar(a11,a22):
+[ x, x^4 ]
+------------------------------
+121
+matris:
+[  x   x x^6]
+[x^3 x^4 x^4]
+[x^2 x^5 x^2]
+Katsayilar(b0,b1):
+[ x^3, x ]
+Elemanlar(a11,a22):
+[ x, x^4 ]
+------------------------------
+127
+matris:
+[  x x^2 x^5]
+[x^2 x^4 x^2]
+[x^3   1 x^2]
+Katsayilar(b0,b1):
+[ x^4, 1 ]
+Elemanlar(a11,a22):
+[ x, x^4 ]
+------------------------------
+132
+matris:
+[  x x^2 x^3]
+[x^2 x^4   1]
+[x^5 x^2 x^2]
+Katsayilar(b0,b1):
+[ x^4, x^5 ]
+Elemanlar(a11,a22):
+[ x, x^4 ]
+------------------------------
+138
+matris:
+[  x x^3 x^2]
+[  x x^4 x^5]
+[x^6 x^4 x^2]
+Katsayilar(b0,b1):
+[ x^5, x^4 ]
+Elemanlar(a11,a22):
+[ x, x^4 ]
+------------------------------
+139
+matris:
+[  x x^3 x^3]
+[  x x^4 x^6]
+[x^5 x^3 x^2]
+Katsayilar(b0,b1):
+[ x^5, x^5 ]
+Elemanlar(a11,a22):
+[ x, x^4 ]
+------------------------------
+161
+matris:
+[  x x^6 x^4]
+[x^3 x^6 x^2]
+[x^3 x^4 x^3]
+Katsayilar(b0,b1):
+[ x, x^6 ]
+Elemanlar(a11,a22):
+[ x, x^6 ]
+------------------------------
+165
+matris:
+[  x   1   x]
+[x^2 x^6 x^5]
+[x^6   x x^3]
+Katsayilar(b0,b1):
+[ x^2, x^3 ]
+Elemanlar(a11,a22):
+[ x, x^6 ]
+------------------------------
+177
+matris:
+[  x x^2 x^6]
+[  1 x^6   x]
+[  x x^5 x^3]
+Katsayilar(b0,b1):
+[ x^4, x ]
+Elemanlar(a11,a22):
+[ x, x^6 ]
+------------------------------
+188
+matris:
+[  x x^3 x^3]
+[x^6 x^6 x^4]
+[x^4 x^2 x^3]
+Katsayilar(b0,b1):
+[ x^5, x^5 ]
+Elemanlar(a11,a22):
+[ x, x^6 ]
+------------------------------
+200
+matris:
+[x^2 x^3 x^6]
+[x^5   x   x]
+[x^3 x^3 x^4]
+Katsayilar(b0,b1):
+[ 1, x^3 ]
+Elemanlar(a11,a22):
+[ x^2, x ]
+------------------------------
+201
+matris:
+[x^2 x^3   1]
+[x^5   x x^2]
+[x^2 x^2 x^4]
+Katsayilar(b0,b1):
+[ 1, x^4 ]
+Elemanlar(a11,a22):
+[ x^2, x ]
+------------------------------
+205
+matris:
+[x^2 x^4 x^4]
+[x^4   x x^5]
+[x^5 x^6 x^4]
+Katsayilar(b0,b1):
+[ x, x ]
+Elemanlar(a11,a22):
+[ x^2, x ]
+------------------------------
+206
+matris:
+[x^2 x^4 x^5]
+[x^4   x x^6]
+[x^4 x^5 x^4]
+Katsayilar(b0,b1):
+[ x, x^2 ]
+Elemanlar(a11,a22):
+[ x^2, x ]
+------------------------------
+211
+matris:
+[x^2 x^5 x^3]
+[x^3   x x^3]
+[x^6   x x^4]
+Katsayilar(b0,b1):
+[ x^2, 1 ]
+Elemanlar(a11,a22):
+[ x^2, x ]
+------------------------------
+217
+matris:
+[x^2 x^5 x^2]
+[x^3   x x^2]
+[  1 x^2 x^4]
+Katsayilar(b0,b1):
+[ x^2, x^6 ]
+Elemanlar(a11,a22):
+[ x^2, x ]
+------------------------------
+219
+matris:
+[x^2 x^6 x^4]
+[x^2   x x^3]
+[x^5   x x^4]
+Katsayilar(b0,b1):
+[ x^3, x ]
+Elemanlar(a11,a22):
+[ x^2, x ]
+------------------------------
+241
+matris:
+[x^2 x^2 x^5]
+[x^6   x   x]
+[x^4 x^3 x^4]
+Katsayilar(b0,b1):
+[ x^6, x^2 ]
+Elemanlar(a11,a22):
+[ x^2, x ]
+------------------------------
+248
+matris:
+[x^2 x^3 x^5]
+[x^6 x^4   x]
+[x^3 x^3   x]
+Katsayilar(b0,b1):
+[ 1, x^2 ]
+Elemanlar(a11,a22):
+[ x^2, x^4 ]
+------------------------------
+254
+matris:
+[x^2 x^4 x^4]
+[x^5 x^4 x^6]
+[x^4 x^5   x]
+Katsayilar(b0,b1):
+[ x, x ]
+Elemanlar(a11,a22):
+[ x^2, x^4 ]
+------------------------------
+256
+matris:
+[x^2 x^4 x^6]
+[x^5 x^4   x]
+[x^2 x^3   x]
+Katsayilar(b0,b1):
+[ x, x^3 ]
+Elemanlar(a11,a22):
+[ x^2, x^4 ]
+------------------------------
+261
+matris:
+[x^2 x^5 x^4]
+[x^4 x^4 x^5]
+[x^4 x^6   x]
+Katsayilar(b0,b1):
+[ x^2, x ]
+Elemanlar(a11,a22):
+[ x^2, x^4 ]
+------------------------------
+266
+matris:
+[x^2 x^5 x^2]
+[x^4 x^4 x^3]
+[x^6   x   x]
+Katsayilar(b0,b1):
+[ x^2, x^6 ]
+Elemanlar(a11,a22):
+[ x^2, x^4 ]
+------------------------------
+267
+matris:
+[x^2 x^6 x^3]
+[x^3 x^4 x^3]
+[x^5   x   x]
+Katsayilar(b0,b1):
+[ x^3, 1 ]
+Elemanlar(a11,a22):
+[ x^2, x^4 ]
+------------------------------
+274
+matris:
+[x^2   1 x^3]
+[x^2 x^4 x^2]
+[x^5 x^2   x]
+Katsayilar(b0,b1):
+[ x^4, 1 ]
+Elemanlar(a11,a22):
+[ x^2, x^4 ]
+------------------------------
+290
+matris:
+[x^2 x^2 x^5]
+[  1 x^4 x^2]
+[x^3 x^2   x]
+Katsayilar(b0,b1):
+[ x^6, x^2 ]
+Elemanlar(a11,a22):
+[ x^2, x^4 ]
+------------------------------
+402
+matris:
+[x^3 x^3 x^4]
+[x^4   x x^6]
+[x^2 x^3 x^6]
+Katsayilar(b0,b1):
+[ x, x^2 ]
+Elemanlar(a11,a22):
+[ x^3, x ]
+------------------------------
+407
+matris:
+[x^3 x^4 x^2]
+[x^3   x x^3]
+[x^4 x^6 x^6]
+Katsayilar(b0,b1):
+[ x^2, 1 ]
+Elemanlar(a11,a22):
+[ x^3, x ]
+------------------------------
+427
+matris:
+[x^3 x^6   x]
+[  x   x   1]
+[x^5 x^2 x^6]
+Katsayilar(b0,b1):
+[ x^4, x^6 ]
+Elemanlar(a11,a22):
+[ x^3, x ]
+------------------------------
+438
+matris:
+[x^3   x x^5]
+[x^6   x x^2]
+[  x   1 x^6]
+Katsayilar(b0,b1):
+[ x^6, x^3 ]
+Elemanlar(a11,a22):
+[ x^3, x ]
+------------------------------
+450
+matris:
+[x^3 x^3 x^3]
+[x^5 x^4 x^6]
+[  1   x x^5]
+Katsayilar(b0,b1):
+[ x, x ]
+Elemanlar(a11,a22):
+[ x^3, x^4 ]
+------------------------------
+455
+matris:
+[x^3 x^3   x]
+[x^5 x^4 x^4]
+[x^2 x^3 x^5]
+Katsayilar(b0,b1):
+[ x, x^6 ]
+Elemanlar(a11,a22):
+[ x^3, x^4 ]
+------------------------------
+463
+matris:
+[x^3 x^5 x^2]
+[x^3 x^4 x^3]
+[  x x^4 x^5]
+Katsayilar(b0,b1):
+[ x^3, 1 ]
+Elemanlar(a11,a22):
+[ x^3, x^4 ]
+------------------------------
+468
+matris:
+[x^3 x^5   1]
+[x^3 x^4   x]
+[x^3 x^6 x^5]
+Katsayilar(b0,b1):
+[ x^3, x^5 ]
+Elemanlar(a11,a22):
+[ x^3, x^4 ]
+------------------------------
+481
+matris:
+[x^3   1 x^6]
+[  x x^4 x^5]
+[x^4 x^2 x^5]
+Katsayilar(b0,b1):
+[ x^5, x^4 ]
+Elemanlar(a11,a22):
+[ x^3, x^4 ]
+------------------------------
+486
+matris:
+[x^3   x x^4]
+[  1 x^4 x^2]
+[x^6 x^5 x^5]
+Katsayilar(b0,b1):
+[ x^6, x^2 ]
+Elemanlar(a11,a22):
+[ x^3, x^4 ]
+------------------------------
+494
+matris:
+[x^3 x^2 x^5]
+[  x x^5 x^4]
+[x^3 x^3 x^4]
+Katsayilar(b0,b1):
+[ 1, x^3 ]
+Elemanlar(a11,a22):
+[ x^3, x^5 ]
+------------------------------
+499
+matris:
+[x^3 x^3 x^3]
+[  1 x^5   x]
+[x^5 x^6 x^4]
+Katsayilar(b0,b1):
+[ x, x ]
+Elemanlar(a11,a22):
+[ x^3, x^5 ]
+------------------------------
+511
+matris:
+[x^3 x^4   x]
+[x^6 x^5 x^5]
+[  1 x^2 x^4]
+Katsayilar(b0,b1):
+[ x^2, x^6 ]
+Elemanlar(a11,a22):
+[ x^3, x^5 ]
+------------------------------
+524
+matris:
+[x^3 x^6   1]
+[x^4 x^5 x^2]
+[  x x^5 x^4]
+Katsayilar(b0,b1):
+[ x^4, x^5 ]
+Elemanlar(a11,a22):
+[ x^3, x^5 ]
+------------------------------
+529
+matris:
+[x^3   1 x^5]
+[x^3 x^5 x^6]
+[x^3   x x^4]
+Katsayilar(b0,b1):
+[ x^5, x^3 ]
+Elemanlar(a11,a22):
+[ x^3, x^5 ]
+------------------------------
+534
+matris:
+[x^3   x x^3]
+[x^2 x^5 x^3]
+[x^5 x^4 x^4]
+Katsayilar(b0,b1):
+[ x^6, x ]
+Elemanlar(a11,a22):
+[ x^3, x^5 ]
+------------------------------
+542
+matris:
+[x^3 x^2 x^4]
+[x^4 x^6 x^6]
+[x^3 x^3   x]
+Katsayilar(b0,b1):
+[ 1, x^2 ]
+Elemanlar(a11,a22):
+[ x^3, x^6 ]
+------------------------------
+555
+matris:
+[x^3 x^4 x^3]
+[x^2 x^6 x^3]
+[x^4 x^6   x]
+Katsayilar(b0,b1):
+[ x^2, x ]
+Elemanlar(a11,a22):
+[ x^3, x^6 ]
+------------------------------
+567
+matris:
+[x^3 x^5   x]
+[  x x^6   1]
+[x^6 x^2   x]
+Katsayilar(b0,b1):
+[ x^3, x^6 ]
+Elemanlar(a11,a22):
+[ x^3, x^6 ]
+------------------------------
+586
+matris:
+[x^3   x x^6]
+[x^5 x^6 x^2]
+[  x   1   x]
+Katsayilar(b0,b1):
+[ x^6, x^4 ]
+Elemanlar(a11,a22):
+[ x^3, x^6 ]
+------------------------------
+595
+matris:
+[x^4 x^6 x^5]
+[x^5   x x^4]
+[x^4 x^4 x^2]
+Katsayilar(b0,b1):
+[ 1, x^6 ]
+Elemanlar(a11,a22):
+[ x^4, x ]
+------------------------------
+603
+matris:
+[x^4   x x^6]
+[x^3   x x^3]
+[x^3 x^5 x^2]
+Katsayilar(b0,b1):
+[ x^2, 1 ]
+Elemanlar(a11,a22):
+[ x^4, x ]
+------------------------------
+609
+matris:
+[x^4   x x^5]
+[x^3   x x^2]
+[x^4 x^6 x^2]
+Katsayilar(b0,b1):
+[ x^2, x^6 ]
+Elemanlar(a11,a22):
+[ x^4, x ]
+------------------------------
+611
+matris:
+[x^4 x^2   1]
+[x^2   x x^3]
+[x^2 x^5 x^2]
+Katsayilar(b0,b1):
+[ x^3, x ]
+Elemanlar(a11,a22):
+[ x^4, x ]
+------------------------------
+613
+matris:
+[x^4 x^2 x^2]
+[x^2   x x^5]
+[  1 x^3 x^2]
+Katsayilar(b0,b1):
+[ x^3, x^3 ]
+Elemanlar(a11,a22):
+[ x^4, x ]
+------------------------------
+621
+matris:
+[x^4 x^3 x^3]
+[  x   x x^5]
+[x^6 x^3 x^2]
+Katsayilar(b0,b1):
+[ x^4, x^4 ]
+Elemanlar(a11,a22):
+[ x^4, x ]
+------------------------------
+622
+matris:
+[x^4 x^3 x^4]
+[  x   x x^6]
+[x^5 x^2 x^2]
+Katsayilar(b0,b1):
+[ x^4, x^5 ]
+Elemanlar(a11,a22):
+[ x^4, x ]
+------------------------------
+636
+matris:
+[x^4 x^5 x^4]
+[x^6   x x^4]
+[x^5 x^4 x^2]
+Katsayilar(b0,b1):
+[ x^6, x^5 ]
+Elemanlar(a11,a22):
+[ x^4, x ]
+------------------------------
+640
+matris:
+[x^4 x^6   x]
+[x^3 x^2 x^5]
+[x^3 x^3   x]
+Katsayilar(b0,b1):
+[ 1, x^2 ]
+Elemanlar(a11,a22):
+[ x^4, x^2 ]
+------------------------------
+648
+matris:
+[x^4   1 x^2]
+[x^2 x^2 x^5]
+[x^2 x^3   x]
+Katsayilar(b0,b1):
+[ x, x^3 ]
+Elemanlar(a11,a22):
+[ x^4, x^2 ]
+------------------------------
+662
+matris:
+[x^4 x^2 x^2]
+[  1 x^2 x^3]
+[x^2 x^5   x]
+Katsayilar(b0,b1):
+[ x^3, x^3 ]
+Elemanlar(a11,a22):
+[ x^4, x^2 ]
+------------------------------
+670
+matris:
+[x^4 x^3 x^3]
+[x^6 x^2 x^3]
+[  x x^5   x]
+Katsayilar(b0,b1):
+[ x^4, x^4 ]
+Elemanlar(a11,a22):
+[ x^4, x^2 ]
+------------------------------
+677
+matris:
+[x^4 x^4 x^3]
+[x^5 x^2 x^2]
+[  x x^6   x]
+Katsayilar(b0,b1):
+[ x^5, x^4 ]
+Elemanlar(a11,a22):
+[ x^4, x^2 ]
+------------------------------
+679
+matris:
+[x^4 x^4 x^5]
+[x^5 x^2 x^4]
+[x^6 x^4   x]
+Katsayilar(b0,b1):
+[ x^5, x^6 ]
+Elemanlar(a11,a22):
+[ x^4, x^2 ]
+------------------------------
+680
+matris:
+[x^4 x^5 x^6]
+[x^4 x^2 x^4]
+[x^5 x^4   x]
+Katsayilar(b0,b1):
+[ x^6, 1 ]
+Elemanlar(a11,a22):
+[ x^4, x^2 ]
+------------------------------
+682
+matris:
+[x^4 x^5   x]
+[x^4 x^2 x^6]
+[x^3 x^2   x]
+Katsayilar(b0,b1):
+[ x^6, x^2 ]
+Elemanlar(a11,a22):
+[ x^4, x^2 ]
+------------------------------
+697
+matris:
+[x^4   1 x^2]
+[  x x^3 x^4]
+[x^5 x^6 x^5]
+Katsayilar(b0,b1):
+[ x, x^3 ]
+Elemanlar(a11,a22):
+[ x^4, x^3 ]
+------------------------------
+707
+matris:
+[x^4   x x^5]
+[  1 x^3 x^6]
+[x^2 x^4 x^5]
+Katsayilar(b0,b1):
+[ x^2, x^6 ]
+Elemanlar(a11,a22):
+[ x^4, x^3 ]
+------------------------------
+717
+matris:
+[x^4 x^3   x]
+[x^5 x^3   1]
+[x^6 x^3 x^5]
+Katsayilar(b0,b1):
+[ x^4, x^2 ]
+Elemanlar(a11,a22):
+[ x^4, x^3 ]
+------------------------------
+719
+matris:
+[x^4 x^3 x^3]
+[x^5 x^3 x^2]
+[x^4   x x^5]
+Katsayilar(b0,b1):
+[ x^4, x^4 ]
+Elemanlar(a11,a22):
+[ x^4, x^3 ]
+------------------------------
+729
+matris:
+[x^4 x^5 x^6]
+[x^3 x^3 x^3]
+[  x   1 x^5]
+Katsayilar(b0,b1):
+[ x^6, 1 ]
+Elemanlar(a11,a22):
+[ x^4, x^3 ]
+------------------------------
+734
+matris:
+[x^4 x^5 x^4]
+[x^3 x^3   x]
+[x^3 x^2 x^5]
+Katsayilar(b0,b1):
+[ x^6, x^5 ]
+Elemanlar(a11,a22):
+[ x^4, x^3 ]
+------------------------------
+742
+matris:
+[x^4 x^6 x^5]
+[  x x^5   1]
+[x^3 x^3 x^3]
+Katsayilar(b0,b1):
+[ 1, x^6 ]
+Elemanlar(a11,a22):
+[ x^4, x^5 ]
+------------------------------
+754
+matris:
+[x^4   x x^3]
+[x^6 x^5 x^3]
+[x^5   1 x^3]
+Katsayilar(b0,b1):
+[ x^2, x^4 ]
+Elemanlar(a11,a22):
+[ x^4, x^5 ]
+------------------------------
+758
+matris:
+[x^4 x^2   1]
+[x^5 x^5 x^6]
+[  x x^4 x^3]
+Katsayilar(b0,b1):
+[ x^3, x ]
+Elemanlar(a11,a22):
+[ x^4, x^5 ]
+------------------------------
+768
+matris:
+[x^4 x^3 x^3]
+[x^4 x^5   x]
+[x^5 x^2 x^3]
+Katsayilar(b0,b1):
+[ x^4, x^4 ]
+Elemanlar(a11,a22):
+[ x^4, x^5 ]
+------------------------------
+777
+matris:
+[x^4 x^4 x^5]
+[x^3 x^5 x^2]
+[x^3   x x^3]
+Katsayilar(b0,b1):
+[ x^5, x^6 ]
+Elemanlar(a11,a22):
+[ x^4, x^5 ]
+------------------------------
+780
+matris:
+[x^4 x^5   x]
+[x^2 x^5 x^4]
+[  1 x^6 x^3]
+Katsayilar(b0,b1):
+[ x^6, x^2 ]
+Elemanlar(a11,a22):
+[ x^4, x^5 ]
+------------------------------
+837
+matris:
+[x^5   x x^4]
+[x^2 x^3 x^5]
+[x^3 x^3 x^4]
+Katsayilar(b0,b1):
+[ 1, x^3 ]
+Elemanlar(a11,a22):
+[ x^5, x^3 ]
+------------------------------
+843
+matris:
+[x^5 x^2 x^3]
+[  x x^3 x^3]
+[x^4 x^5 x^4]
+Katsayilar(b0,b1):
+[ x, x^2 ]
+Elemanlar(a11,a22):
+[ x^5, x^3 ]
+------------------------------
+853
+matris:
+[x^5 x^3 x^6]
+[  1 x^3 x^5]
+[  x x^3 x^4]
+Katsayilar(b0,b1):
+[ x^2, x^5 ]
+Elemanlar(a11,a22):
+[ x^5, x^3 ]
+------------------------------
+856
+matris:
+[x^5 x^4 x^2]
+[x^6 x^3   1]
+[x^5   x x^4]
+Katsayilar(b0,b1):
+[ x^3, x ]
+Elemanlar(a11,a22):
+[ x^5, x^3 ]
+------------------------------
+873
+matris:
+[x^5 x^6 x^5]
+[x^4 x^3   x]
+[x^2   1 x^4]
+Katsayilar(b0,b1):
+[ x^5, x^4 ]
+Elemanlar(a11,a22):
+[ x^5, x^3 ]
+------------------------------
+876
+matris:
+[x^5   1   x]
+[x^3 x^3 x^3]
+[x^6 x^5 x^4]
+Katsayilar(b0,b1):
+[ x^6, 1 ]
+Elemanlar(a11,a22):
+[ x^5, x^3 ]
+------------------------------
+889
+matris:
+[x^5   x   1]
+[x^6 x^4 x^5]
+[x^3 x^3 x^3]
+Katsayilar(b0,b1):
+[ 1, x^6 ]
+Elemanlar(a11,a22):
+[ x^5, x^4 ]
+------------------------------
+893
+matris:
+[x^5 x^2 x^4]
+[x^5 x^4   x]
+[x^6   1 x^3]
+Katsayilar(b0,b1):
+[ x, x^3 ]
+Elemanlar(a11,a22):
+[ x^5, x^4 ]
+------------------------------
+898
+matris:
+[x^5 x^3 x^2]
+[x^4 x^4 x^5]
+[  x x^3 x^3]
+Katsayilar(b0,b1):
+[ x^2, x ]
+Elemanlar(a11,a22):
+[ x^5, x^4 ]
+------------------------------
+904
+matris:
+[x^5 x^4   x]
+[x^3 x^4 x^3]
+[x^2 x^5 x^3]
+Katsayilar(b0,b1):
+[ x^3, 1 ]
+Elemanlar(a11,a22):
+[ x^5, x^4 ]
+------------------------------
+916
+matris:
+[x^5 x^5 x^6]
+[x^2 x^4   1]
+[x^4   x x^3]
+Katsayilar(b0,b1):
+[ x^4, x^5 ]
+Elemanlar(a11,a22):
+[ x^5, x^4 ]
+------------------------------
+920
+matris:
+[x^5 x^6 x^3]
+[  x x^4 x^3]
+[  1 x^5 x^3]
+Katsayilar(b0,b1):
+[ x^5, x^2 ]
+Elemanlar(a11,a22):
+[ x^5, x^4 ]
+------------------------------
+995
+matris:
+[x^6 x^6 x^4]
+[x^3   x x^3]
+[x^2 x^4 x^3]
+Katsayilar(b0,b1):
+[ x^2, 1 ]
+Elemanlar(a11,a22):
+[ x^6, x ]
+------------------------------
+1006
+matris:
+[x^6   1   x]
+[x^2   x x^6]
+[x^5   x x^3]
+Katsayilar(b0,b1):
+[ x^3, x^4 ]
+Elemanlar(a11,a22):
+[ x^6, x ]
+------------------------------
+1017
+matris:
+[x^6 x^2 x^5]
+[  1   x   x]
+[  x x^6 x^3]
+Katsayilar(b0,b1):
+[ x^5, x ]
+Elemanlar(a11,a22):
+[ x^6, x ]
+------------------------------
+1028
+matris:
+[x^6 x^3 x^2]
+[x^6   x x^4]
+[x^4 x^3 x^3]
+Katsayilar(b0,b1):
+[ x^6, x^5 ]
+Elemanlar(a11,a22):
+[ x^6, x ]
+------------------------------
+1081
+matris:
+[x^6 x^4 x^6]
+[x^2 x^3 x^4]
+[x^3 x^3   x]
+Katsayilar(b0,b1):
+[ 1, x^2 ]
+Elemanlar(a11,a22):
+[ x^6, x^3 ]
+------------------------------
+1091
+matris:
+[x^6 x^5 x^2]
+[  x x^3 x^6]
+[  1   x   x]
+Katsayilar(b0,b1):
+[ x, x^5 ]
+Elemanlar(a11,a22):
+[ x^6, x^3 ]
+------------------------------
+1110
+matris:
+[x^6   x   1]
+[x^5 x^3   x]
+[x^2 x^6   x]
+Katsayilar(b0,b1):
+[ x^4, x^3 ]
+Elemanlar(a11,a22):
+[ x^6, x^3 ]
+------------------------------
+1120
+matris:
+[x^6 x^2 x^3]
+[x^4 x^3 x^3]
+[x^6 x^4   x]
+Katsayilar(b0,b1):
+[ x^5, x^6 ]
+Elemanlar(a11,a22):
+[ x^6, x^3 ]
+------------------------------
