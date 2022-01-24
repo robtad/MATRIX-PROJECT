@@ -3,7 +3,9 @@ import re
 
 list = []
 
-#read and process matrix from file
+# read and process matrix from file
+
+
 def matrix(file_name):
     file_name = file_name + '.txt'
     with open(file_name, 'r') as f:
@@ -11,7 +13,7 @@ def matrix(file_name):
         j = num_lines/4
         flag = 0
         # to skip the dotted line in the file
-        # dotted line occurs in lines(4,8,12,16,20,24...)
+        # dotted line occurs in lines(4,8,12,16,20,24...)(arithmetic sequence)
         for i in range(1, num_lines+1):
             for k in range(int(j+1)):
                 if i == (4*k):
@@ -29,10 +31,12 @@ def matrix(file_name):
             flag = 0
     just_numbers()
 
+
 # convert individual items in the list to pure numbers of power before writing
 # them to different file
 new_list = []
 newer_list = []
+
 
 def just_numbers():
     for item in list:
@@ -44,7 +48,6 @@ def just_numbers():
                 new_item += '0 '
             elif (item[i] == 'x') and ((item[i+1] != 1) and (item[i+1] != 'x')):
                 new_item += item[i+1] + ' '
-                #item = item.replace(item[i+1], '')
             if item[i] == 'x' and item[i+1] == 'x':
                 new_item += '1 '
 
@@ -54,22 +57,24 @@ def just_numbers():
             new_item += '1 '
         new_list.append(new_item + ' ')
 
-    #putting all exponents of elements of all rows of a matrix in a single string
-    
+    # putting all exponents of elements of all rows of a matrix in a single string
+
     newer_item = ''
     num_row = 3
     i = 0
     for item in new_list:
-        newer_item += item 
+        newer_item += item
         i += 1
         if i % num_row == 0:
             newer_list.append(newer_item)
             newer_item = ''
 
 # writing the new list(string) of exponents of matrix elements to new file
-#f_exp--->f-file,exp-exponents
+# f_exp--->f-file,exp-exponents
+
+
 def write_list(file_name):
-    file_name = 'list_' + file_name + '.txt' 
+    file_name = 'list_' + file_name + '.txt'
     with open(file_name, 'w') as f_exp:
         for item in newer_list:
             f_exp.write(item)
@@ -78,22 +83,26 @@ def write_list(file_name):
 
 sorted_list = []
 new_sorted_list = []
+
+
 def sort_list():
     for item in newer_list:
-        item = str(item).replace(' ', '') 
+        item = str(item).replace(' ', '')
         sorted_list.append(sorted(item))
-    #print(sorted_list)
+    # print(sorted_list)
 
-    #preparing sorted string of matrix exponents
-    #by converting the sorted list to sorted string of exponents
-    
+    # preparing sorted string of matrix exponents
+    # by converting the sorted list to sorted string of exponents
+
     for item in sorted_list:
         n_item = ' '.join(item)
         new_sorted_list.append(n_item)
-    #print(new_sorted_list)
+    # print(new_sorted_list)
 
 # writing a sorted list(string) of exponents of matrix elements to new file
-#f_s_exp--->f-file,s-sorted,exp-exponents
+# f_s_exp--->f-file,s-sorted,exp-exponents
+
+
 def write_ordered_list(file_name):
     file_name = 'list_sorted_' + file_name + '.txt'
     sort_list()
@@ -102,11 +111,14 @@ def write_ordered_list(file_name):
             f_s_exp.write(item)
             f_s_exp.write('\n')
 
-#unsorted string of exponents of a matrix ==> newer_list
-#sorted string of exponents of a matrix ==> new_sorted_list
+# unsorted string of exponents of a matrix ==> newer_list
+# sorted string of exponents of a matrix ==> new_sorted_list
 
-#fetching representative matrices.
+
+# fetching representative matrices.
 rep_matrix = []
+
+
 def write_rep_matrix(file_name):
     new_sorted_list.sort()
     matrix = ''
@@ -116,11 +128,34 @@ def write_rep_matrix(file_name):
         if item != matrix:
             matrix = item
             rep_matrix.append(matrix)
-    #print(rep_matrix)
+    # print(rep_matrix)
 
-    #writing representative matrix to a file(f_r_matrix --->f-file,r-representative)
+    # writing representative matrix to a file(f_r_matrix --->f-file,r-representative)
     file_name = 'rep_matrix_' + file_name + '.txt'
     with open(file_name, 'w') as f_r_matrix:
         for item in rep_matrix:
             f_r_matrix.write(item)
             f_r_matrix.write('\n')
+
+
+# writing unique representative matrix(No zeros and no repeating digits)
+unique_rep_matrix = []
+def write_unique_rep_matrix(file_name):
+    for item in rep_matrix:
+        new_item = "".join(dict.fromkeys(item))
+        new_item = new_item.replace('0', '')
+        new_item = new_item.replace(' ', '')
+        unique_rep_matrix.append(new_item)
+        new_item = ''
+    # print(unique_rep_matrix)
+
+    # writing unique representative matrix to a file.
+    # representative matrices of all matrices under one polinomial are in just one file
+
+    name_of_file = 'unique_rep_matrix_gf3_0xb(x3+x+1)' + '.txt'
+    with open(name_of_file, 'a') as f_u_r_matrix:
+        f_u_r_matrix.write('---------'+file_name+'---------')
+        f_u_r_matrix.write('\n')
+        for item in unique_rep_matrix:
+            f_u_r_matrix.write(item)
+            f_u_r_matrix.write('\n')
