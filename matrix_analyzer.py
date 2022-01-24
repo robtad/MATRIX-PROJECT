@@ -69,7 +69,7 @@ def just_numbers():
 # writing the new list(string) of exponents of matrix elements to new file
 #f_exp--->f-file,exp-exponents
 def write_list(file_name):
-    file_name = file_name + '_e_list.txt' 
+    file_name = 'list_' + file_name + '.txt' 
     with open(file_name, 'w') as f_exp:
         for item in newer_list:
             f_exp.write(item)
@@ -95,7 +95,7 @@ def sort_list():
 # writing a sorted list(string) of exponents of matrix elements to new file
 #f_s_exp--->f-file,s-sorted,exp-exponents
 def write_ordered_list(file_name):
-    file_name = file_name + '_e_list_sorted.txt'
+    file_name = 'list_sorted_' + file_name + '.txt'
     sort_list()
     with open(file_name, 'w') as f_s_exp:
         for item in new_sorted_list:
@@ -119,7 +119,7 @@ def write_rep_matrix(file_name):
     #print(rep_matrix)
 
     #writing representative matrix to a file(f_r_matrix --->f-file,r-representative)
-    file_name = file_name + '_rep_matrix.txt'
+    file_name = 'rep_matrix_' + file_name + '.txt'
     with open(file_name, 'w') as f_r_matrix:
         for item in rep_matrix:
             f_r_matrix.write(item)
