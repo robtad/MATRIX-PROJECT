@@ -1,4 +1,5 @@
 import linecache
+import os
 import re
 
 list = []
@@ -139,6 +140,13 @@ def write_rep_matrix(file_name):
 
 
 # writing unique representative matrix(No zeros and no repeating digits)
+def get_folder_name():
+    path = os.getcwd()
+    path = path.replace('\\', '/')
+    folder_name = os.path.basename(path)
+    return folder_name
+
+
 unique_rep_matrix = []
 
 
@@ -154,7 +162,7 @@ def write_unique_rep_matrix(file_name):
     # writing unique representative matrix to a file.
     # representative matrices of all matrices under one polinomial are in just one file
 
-    name_of_file = 'unique_rep_matrix_gf3_0xb(x3+x+1)' + '.txt'
+    name_of_file = 'unique_rep_matrix_' + get_folder_name() + '.txt'
     with open(name_of_file, 'a') as f_u_r_matrix:
         f_u_r_matrix.write('---------'+file_name+'---------')
         f_u_r_matrix.write('\n')

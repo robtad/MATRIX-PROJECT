@@ -2,9 +2,11 @@
 from fileinput import filelineno
 import os
 # to get path of the current working directory
-path = os.path.abspath(os.getcwd())
+path = os.getcwd()
 path = path.replace('\\', '/')
-# print("path:"+fpath)
+
+folder_name = os.path.basename(path)
+print("folder name: "+folder_name)
 
 os.chdir(path)
 file_list = []
