@@ -1,9 +1,11 @@
 # To read all txt files in a folder
 from fileinput import filelineno
 import os
-#this code is included in the main_all.py
-path = r"D:\MY PROJECTS\MATRIX PROJECT\Updated Codes"
-print(path)
+# to get path of the current working directory
+path = os.path.abspath(os.getcwd())
+path = path.replace('\\', '/')
+# print("path:"+fpath)
+
 os.chdir(path)
 file_list = []
 # iterate through all file
@@ -38,6 +40,7 @@ print('\n\nfile removal successful!')
 print('\nlisting remaining file...\n')
 get_txt_files()
 list_existing_files(file_list)
+
 
 # print(all_files)
 # for file in all_files:

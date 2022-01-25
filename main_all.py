@@ -1,11 +1,13 @@
 from fileinput import filelineno
 from matrix_analyzer import *
 import os
-# To read all txt files in a folder
-# dont forget to update the belows path for the specific folder you're running this code in
-path = r"D:\MY PROJECTS\MATRIX PROJECT\Updated Codes"
-os.chdir(path)
-# iterate through all file
+## To read all txt files in a folder
+## to get path of the current working directory
+path = os.path.abspath(os.getcwd())
+path = path.replace('\\', '/')
+# print("path:"+fpath)
+
+## iterate through all file
 file_list = []
 def get_txt_files():
     file_list.clear()
