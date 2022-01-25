@@ -1,24 +1,34 @@
+from fileinput import filelineno
 from matrix_analyzer import *
-
-# change these
-# without the extension (.txt) and the number at the beginning
-general_file_name = 'GF3_0xb_3x3_matris'
-i = 31  # the list start from
-no_in_list = 47  # number doesn't exist in list
-
+import os
+# To read all txt files in a folder
+# dont forget to update the belows path for the specific folder you're running this code in
+path = r"D:\MY PROJECTS\MATRIX PROJECT\Updated Codes"
+os.chdir(path)
+# iterate through all file
 file_list = []
-for x in range(18):
-    if i != no_in_list:
-        file_name = str(i) + general_file_name
-        file_list.append(file_name)
-    i += 1
+def get_txt_files():
+    file_list.clear()
+    for file_name in os.listdir():
+        if file_name.endswith('.txt'):
+            file_list.append(file_name)
+def remove_specific_file(list_of_files):
+    for file in list_of_files:
+        if ('list' in file) or ('rep' in file):
+            os.remove(file)
 
-for item in file_list:
-    matrix(item)
-    write_list(item)
-    write_ordered_list(item)
-    write_rep_matrix(item)
-    write_unique_rep_matrix(item)
+
+get_txt_files()
+remove_specific_file(file_list)
+get_txt_files()
+
+
+for file in file_list:
+    matrix(file)
+    write_list(file)
+    write_ordered_list(file)
+    write_rep_matrix(file)
+    write_unique_rep_matrix(file)
     # reset lists
     list.clear()
     new_list.clear()

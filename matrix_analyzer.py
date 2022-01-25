@@ -7,7 +7,7 @@ list = []
 
 
 def matrix(file_name):
-    file_name = file_name + '.txt'
+    #file_name = file_name
     with open(file_name, 'r') as f:
         num_lines = sum(1 for line in f)
         j = num_lines/4
@@ -74,7 +74,7 @@ def just_numbers():
 
 
 def write_list(file_name):
-    file_name = 'list_' + file_name + '.txt'
+    file_name = 'e_list_' + file_name
     with open(file_name, 'w') as f_exp:
         for item in newer_list:
             f_exp.write(item)
@@ -104,7 +104,7 @@ def sort_list():
 
 
 def write_ordered_list(file_name):
-    file_name = 'list_sorted_' + file_name + '.txt'
+    file_name = 'e_list_sorted_' + file_name
     sort_list()
     with open(file_name, 'w') as f_s_exp:
         for item in new_sorted_list:
@@ -131,7 +131,7 @@ def write_rep_matrix(file_name):
     # print(rep_matrix)
 
     # writing representative matrix to a file(f_r_matrix --->f-file,r-representative)
-    file_name = 'rep_matrix_' + file_name + '.txt'
+    file_name = 'rep_matrix_' + file_name
     with open(file_name, 'w') as f_r_matrix:
         for item in rep_matrix:
             f_r_matrix.write(item)
@@ -140,6 +140,8 @@ def write_rep_matrix(file_name):
 
 # writing unique representative matrix(No zeros and no repeating digits)
 unique_rep_matrix = []
+
+
 def write_unique_rep_matrix(file_name):
     for item in rep_matrix:
         new_item = "".join(dict.fromkeys(item))
