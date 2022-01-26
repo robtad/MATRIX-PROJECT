@@ -1,14 +1,16 @@
+from dataclasses import replace
 import linecache
 import os
 import re
+from typing import OrderedDict
 
-list = []
 
 # read and process matrix from file
 
+list = []
+
 
 def matrix(file_name):
-    #file_name = file_name
     with open(file_name, 'r') as f:
         num_lines = sum(1 for line in f)
         j = num_lines/4
@@ -25,48 +27,42 @@ def matrix(file_name):
                 # used linecache to read specific line in the file( here it reads i^th line)
                 content = (linecache.getline(file_name, i))
                 # used 're' from regEx(regular expression) library to remove unwanted chars
-                content = re.sub(r"[\n\t\s^[\]]*", "", content)
-
+                content = re.sub(r"[\n^[\]]*", "", content)
+                # replaces multiple spaces with one space
+                content = re.sub(' +', ' ', content)
+                content += ' '
+                content = content.replace(' ', '.')
                 list.append(content)
 
             flag = 0
     just_numbers()
 
 
-# convert individual items in the list to pure numbers of power before writing
-# them to different file
 new_list = []
 newer_list = []
+
+# convert individual items in the list to pure numbers of power before writing
+# them to different file
 
 
 def just_numbers():
     for item in list:
-        new_item = ''
-        for i in range(len(item)-1):
-            if item[i] == 'x' and item[i+1] == '1':
-                new_item += '1 '
-            elif item[i] == '1':
-                new_item += '0 '
-            elif (item[i] == 'x') and ((item[i+1] != 1) and (item[i+1] != 'x')):
-                new_item += item[i+1] + ' '
-            if item[i] == 'x' and item[i+1] == 'x':
-                new_item += '1 '
-
-        if item[len(item)-1] == '1':
-            new_item += '0 '
-        elif item[len(item)-1] == 'x':
-            new_item += '1 '
-        new_list.append(new_item + ' ')
-
+        item = item.replace('1.', '0.')
+        item = item.replace('x.', '1.')
+        item = item.replace('x', '')
+        item = item.lstrip('.')
+        item = item.replace('.', ' ')
+        new_list.append(item)
     # putting all exponents of elements of all rows of a matrix in a single string
 
     newer_item = ''
     num_row = 3
     i = 0
     for item in new_list:
-        newer_item += item
+        newer_item += item + '      '
         i += 1
         if i % num_row == 0:
+            newer_item = newer_item.rstrip()
             newer_list.append(newer_item)
             newer_item = ''
 
@@ -88,17 +84,20 @@ new_sorted_list = []
 
 def sort_list():
     for item in newer_list:
-        item = str(item).replace(' ', '')
-        sorted_list.append(sorted(item))
+        item = re.sub(' +', ' ', item)
+        item = item.split(' ')
+        item = [int(i) for i in item]
+        item.sort()
+        sorted_list.append(item)
     # print(sorted_list)
 
     # preparing sorted string of matrix exponents
     # by converting the sorted list to sorted string of exponents
 
     for item in sorted_list:
-        n_item = ' '.join(item)
-        new_sorted_list.append(n_item)
-    # print(new_sorted_list)
+        string_item = ' '.join(str(i) for i in item)
+        new_sorted_list.append(string_item)
+
 
 # writing a sorted list(string) of exponents of matrix elements to new file
 # f_s_exp--->f-file,s-sorted,exp-exponents
@@ -139,7 +138,9 @@ def write_rep_matrix(file_name):
             f_r_matrix.write('\n')
 
 
-# writing unique representative matrix(No zeros and no repeating digits)
+# writing unique representative matrix(No zeros and no repeating elements)
+
+
 def get_folder_name():
     path = os.getcwd()
     path = path.replace('\\', '/')
@@ -147,24 +148,40 @@ def get_folder_name():
     return folder_name
 
 
+new_rep_matrix = []
+
 unique_rep_matrix = []
 
 
 def write_unique_rep_matrix(file_name):
+    # convert list of strings to list of lists
+
     for item in rep_matrix:
-        new_item = "".join(dict.fromkeys(item))
-        new_item = new_item.replace('0', '')
-        new_item = new_item.replace(' ', '')
+        item_as_list = (item.split(' '))
+        new_rep_matrix.append(item_as_list)
+
+    for item in new_rep_matrix:
+        new_item = set(item)  # to remove duplicates
+        # new_item.remove('0')
+        new_item = sorted(new_item, key=int)  # sorting by int value
+        new_item = '  '.join(new_item)
+        new_item = new_item.replace('0 ', '')
+        new_item = new_item.lstrip(' ')
+        new_item = re.sub(' +', ' ', new_item)
         unique_rep_matrix.append(new_item)
         new_item = ''
     # print(unique_rep_matrix)
 
     # writing unique representative matrix to a file.
     # representative matrices of all matrices under one polinomial are in just one file
-
     name_of_file = 'unique_rep_matrix_' + get_folder_name() + '.txt'
     with open(name_of_file, 'a') as f_u_r_matrix:
-        f_u_r_matrix.write('---------'+file_name+'---------')
+        new_file_name = file_name.replace('matris.txt', 'unique_rep_matris')
+        f_u_r_matrix.write('---------------------------------------------')
+        f_u_r_matrix.write('\n')
+        f_u_r_matrix.write(new_file_name)
+        f_u_r_matrix.write('\n')
+        f_u_r_matrix.write('---------------------------------------------')
         f_u_r_matrix.write('\n')
         for item in unique_rep_matrix:
             f_u_r_matrix.write(item)

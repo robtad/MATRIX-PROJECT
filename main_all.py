@@ -43,5 +43,4 @@ for file in file_list:
     new_sorted_list.clear()
     rep_matrix.clear()
     unique_rep_matrix.clear()
-
-    # print(list);print(new_list);print(newer_list);print(sorted_list);print(new_sorted_list);print(rep_matrix)
+    new_rep_matrix.clear()
