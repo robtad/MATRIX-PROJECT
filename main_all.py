@@ -44,3 +44,4 @@ for file in file_list:
     rep_matrix.clear()
     unique_rep_matrix.clear()
     new_rep_matrix.clear()
+    unique_rep_matrix2.clear()

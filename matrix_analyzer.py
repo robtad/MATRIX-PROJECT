@@ -116,18 +116,16 @@ def write_ordered_list(file_name):
 
 
 # fetching representative matrices.
-rep_matrix = []
+rep_matrix = []  # new_sorted_list without duplicates
 
 
 def write_rep_matrix(file_name):
     new_sorted_list.sort()
-    matrix = ''
+    # print(new_sorted_list)
     for item in new_sorted_list:
-        if item == matrix:
-            continue
-        if item != matrix:
-            matrix = item
-            rep_matrix.append(matrix)
+        if item not in rep_matrix:
+            rep_matrix.append(item)
+
     # print(rep_matrix)
 
     # writing representative matrix to a file(f_r_matrix --->f-file,r-representative)
@@ -151,6 +149,7 @@ def get_folder_name():
 new_rep_matrix = []
 
 unique_rep_matrix = []
+unique_rep_matrix2 = []  # unique_rep_matrix with no duplicates
 
 
 def write_unique_rep_matrix(file_name):
@@ -162,7 +161,6 @@ def write_unique_rep_matrix(file_name):
 
     for item in new_rep_matrix:
         new_item = set(item)  # to remove duplicates
-        # new_item.remove('0')
         new_item = sorted(new_item, key=int)  # sorting by int value
         new_item = '  '.join(new_item)
         new_item = new_item.replace('0 ', '')
@@ -171,6 +169,12 @@ def write_unique_rep_matrix(file_name):
         unique_rep_matrix.append(new_item)
         new_item = ''
     # print(unique_rep_matrix)
+# remove duplicates from unique_rep_matrix
+
+    for item in unique_rep_matrix:
+        if item not in unique_rep_matrix2:
+            unique_rep_matrix2.append(item)
+    # print(unique_rep_matrix2)
 
     # writing unique representative matrix to a file.
     # representative matrices of all matrices under one polinomial are in just one file
@@ -183,6 +187,6 @@ def write_unique_rep_matrix(file_name):
         f_u_r_matrix.write('\n')
         f_u_r_matrix.write('---------------------------------------------')
         f_u_r_matrix.write('\n')
-        for item in unique_rep_matrix:
+        for item in unique_rep_matrix2:
             f_u_r_matrix.write(item)
             f_u_r_matrix.write('\n')
